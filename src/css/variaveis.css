@@ -1,0 +1,16 @@
+:root {
+    --neutro-vermelho :  hsl(7, 99%, 70%);
+    --amarelo: hsl(51, 100%, 49%);
+    --azul-escuro: hsl(198, 62%, 26%);
+    --ciano-escuro-desaturado: hsl(167, 40%, 24%);
+    --ciano-escuro-moderno: hsl(168, 34%, 41%);
+
+    /* CORES NEUTRAS ABAIXO: */
+    --azul-muito-escuro-desaturado: hsl(212, 27%, 19%);
+    --azul-muito-escuro-acinzentado:  hsl(213, 9%, 39%);
+    --azul-escuro-acinzentado: hsl(232, 10%, 55%);
+    --azul-acinzentado: hsl(210, 4%, 67%);
+
+      /* Fonte Padrão: */
+    --fonte-padrao: 18px;
+}
