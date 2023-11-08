@@ -1,148 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/estilo.css" />
+    <link rel="stylesheet" href="src/css/variaveis.css"/>
+    <link rel="stylesheet" href="src/css/menu.css">
 
-  <link rel="stylesheet" href="src/css/reset.css">
-  <link rel="stylesheet" href="src/css/estilo.css">
-  <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-</head>
-<body>
-
-  <header class="cabecalho">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header class="header">
       <div class="header-container">
-            <a href="/">
-            <h1>sunnyside</h1>
-            </a>
+        <a href="/">
+          <h1>sunnyside</h1>
+        </a>
+
+        <nav>
+          <input type="checkbox" id="menu-hambuguer" />
+          <label for="menu-hambuguer">
+            <div class="menu">
+              <span class="hambuguer"></span>
+            </div>
+          </label>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    <nav>
-        <input type="checkbox" id="menu-hambuguer">
-        <label for="menu-hambuguer">
-          <div class="menu">
-             <span class="hambuguer"></span>
-          </div>
-        </label>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li> <a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    </header>
 
-  <section class="hero">
-        <h1>We are creatives</h1>
-        <i class="fa-light fa-arrow-down fa-bounce" style="color: #ffffff;"></i>
-  </section>
+    <section class="hero">
+      <h1>We are creatives</h1>
+      <i class="fa-light fa-arrow-down fa-bounce" style="color: #ffffff"></i>
+    </section>
 
-  <section class="about" id="about">
-    <div class="item">
-      <h2>Transform your brand</h2>
-      <p> We are a full-service creative agency specializing in helping brands grow fast. 
-        Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <button> Learn more</button>
-    </div>
-  <div class="image-right"> 
-    
-  </div>
-  <div class="item">
-    <h2>Stand out to the right audience</h2>
-    <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-    </p>
-    <button>Learn more</button>
-  </div>
-  <div class="image-left">
+    <section class="about" id="about">
+      <div class="item">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <button>Learn more</button>
+      </div>
+      <div class="image-right"></div>
+      <div class="item">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <button>Learn more</button>
+      </div>
+      <div class="image-left"></div>
 
-  </div>
+      <div class="image-item">
+        <h2>Graphic design</h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+      <div class="image-item">
+        <h2>Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
 
-  <div class="image-item">
-      <h2>Graphic design</h2>
-      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-  </div>
-  <div class="image-item">
-    <h2>Photography</h2>
-    <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-  </div>
-  </section>
-
-  <section class="services" id="services">
+    <section class="services" id="services">
       <h2>Client testimonials</h2>
       <ul class="list-membres">
         <li>
-          <img src="./images/image-emily.jpg" alt="Photo the Perfil" class="membres">
-          <p class="membres-descrition">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <h3 class="membres-name"> Emily R.</h3>
+          <img
+            src="./images/image-emily.jpg"
+            alt="Photo the Perfil"
+            class="membres"
+          />
+          <p class="membres-descrition">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h3 class="membres-name">Emily R.</h3>
           <span class="membres-profession">Marketing Director</span>
         </li>
         <li>
-          <img src="./images/image-thomas.jpg" alt="Photo the Perfil" class="membres">
-          <p class="membres-descrition"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <h3 class="membres-name">  Thomas S.</h3>
+          <img
+            src="./images/image-thomas.jpg"
+            alt="Photo the Perfil"
+            class="membres"
+          />
+          <p class="membres-descrition">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h3 class="membres-name">Thomas S.</h3>
           <span class="membres-profession">Chief Operating Officer</span>
         </li>
         <li>
-          <img src="./images/image-jennie.jpg" alt="Photo the Perfil" class="membres">
+          <img
+            src="./images/image-jennie.jpg"
+            alt="Photo the Perfil"
+            class="membres"
+          />
           <p class="membres-descrition"></p>
-          <h3 class="membres-name"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</h3>
+          <h3 class="membres-name">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </h3>
           <span class="membres-profession">Business Owner</span>
         </li>
       </ul>
-  </section>
-  
- <section class="projects" id="projects">
+    </section>
 
- </section>
+    <section class="projects" id="projects"></section>
 
- <footer class="contact" id="contact">
-        <h2>Sunnyside</h2>
-        <nav>
-          <ul>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-          </ul>
-        </nav>
+    <footer class="contact" id="contact">
+      <div class="social">
+        <a href="/">
+          <li>
+            <i class="fa-brands fa-square-facebook"></i>
+          </li>
+        </a>
 
-        <div class="social">
-          <a href="/">
-            <li>
-              <i class="fa-brands fa-square-facebook"></i>
-            </li>
-          </a>
-
-          <a href="/">
-              <li>
-                <i class="fa-brands fa-instagram"></i>
-              </li>
-          </a>
-          <a href="/">
-              <li>
-                <i class="fa-brands fa-twitter"></i>
-              </li>
-          </a>
-          <a href="/">
-              <li>
-                <i class="fa-brands fa-twitter"></i>
-              </li>
-          </a>
-        </div>
- </footer>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/IsraelPina32">Israel Pina</a>.
-  </div>
-</body>
+        <a href="/">
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </a>
+        <a href="/">
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+        </a>
+        <a href="/">
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

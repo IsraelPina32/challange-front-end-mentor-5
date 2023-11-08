@@ -1,6 +1,62 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "services services services services"
+    "projects projects projects projects"
+    "contact contact contact contact";
+    grid-template-columns: repeat(4, 1fr);
+}
 
+.header {
+  grid-area: header;
+}
 
+.hero {
+    grid-area: hero;
+}
 
+.about {
+    grid-area: about;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.services {
+    grid-area: services;
+    background-color: blueviolet;
+}
+
+.projects {
+    grid-area: projects;
+    background-color: blue;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: aquamarine;
+}
+
+.header .header-container {
+  display: flex;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 75px;
+  background-color: hsl(206, 100%, 60%);
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Fraunces', sans-serif;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.header a:hover h1{
+    color: var(--amarelo);
+    scale: (1.1);
+    transform: scale(1.1);
+}
+
