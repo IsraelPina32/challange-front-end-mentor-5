@@ -27,7 +27,8 @@
     display: none;
     width: 60px;
     height: 60px;
-    align-self: center;
+    position: relative;
+    left: 200px;
 }
 
 .header nav label {
