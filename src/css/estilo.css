@@ -111,6 +111,13 @@ body {
 .about .image.right {
     background: url(../images/desktop/image-transform.jpg) center center no-repeat;
     background-size: cover;
+    position: absolute;
+    
+    /*
+    teste
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) */
 }
 
 .about .image.left {
