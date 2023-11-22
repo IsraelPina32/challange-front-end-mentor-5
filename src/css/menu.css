@@ -28,8 +28,7 @@
     display: none;
     width: 60px;
     height: 60px;
-    position: relative;
-    left: 120px;
+    align-self: flex-end;
 }
 
 .header nav label {
@@ -38,19 +37,19 @@
 }
 
 .header .hambuguer {
-    background-color: var(--azul-acinzentado);
-    position: relative;
+    background-color: #ffffff;
     display: block;
+    position: relative;
     width: 30px;
     height: 2px;
     top: 29px;
-    left: 0px;
+    left: 45px;
     transition: 0.5s ease-in-out;
 }
 
 .header .hambuguer:before, 
 .header .hambuguer:after{
-    background-color: var(--azul-acinzentado);
+    background-color: #ffffff;
     content: '';
     display: block;
     width: 100%;
@@ -59,8 +58,10 @@
     transition: 0.2s ease-in-out;
 }
 
+
 .header .hambuguer:before {
     top: -10px;
+   
 }
 
 .header .hambuguer:after {
