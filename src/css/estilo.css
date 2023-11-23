@@ -218,79 +218,133 @@ body {
     grid-template-rows: repeat(4, 1fr);
   }
 }
+@media (max-width: 320px) {
+  .about .image.item1 .container-conteudo,
+  .about .image.item2 .container-conteudo {
+    left: 1%;
+    top: 45%;
+  }
+
+  .about .image.item1 .container-conteudo h3,
+  .about .image.item2 .container-conteudo h3 {
+    font-size: 15px;
+  }
+
+  .about .image.item1 .container-conteudo p,
+  .about .image.item2 .container-conteudo p.descricao-azul {
+    font-size: 10px;
+  }
+}
 
 .services {
   grid-area: services;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 2050px;
-  margin: 0 auto;
- 
 }
 
 .services h2 {
-    font-weight: 900;
-    font-family: 'Fraunces', sans-serif;
-    color: var(--azul-acinzentado);
-    font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    margin: 25px;
-    padding: 15px;
+  font-weight: 900;
+  font-family: "Fraunces", sans-serif;
+  color: var(--azul-acinzentado);
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 25px;
+  padding: 15px;
 }
 
 .services .list-membres {
-    display: flex;
-    margin: 15px;
-    padding: 15px;
+  display: flex;
+  /* margin: 15px;
+    padding: 15px; */
 }
 
 .services .list-membres li {
-    margin: 30px;
+  margin: 15px;
 }
 
 .services .list-membres li .membres {
-    border-radius: 50%;
-    padding: 25px;
+  border-radius: 50%;
+  padding: 25px;
+  height: 40%;
 }
 
 .services .list-membres li .membres-descrition {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    padding: 15px;
-    color: var(--azul-muito-escuro-acinzentado);
-    width: 380px;
-    line-height: 25px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px;
+  color: var(--azul-muito-escuro-acinzentado);
+  width: 380px;
+  line-height: 25px;
 }
 
 .services .list-membres li .membres-name {
-    color: black;
-    font-size: 20px;
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 600;
-    padding: 15px;
+  color: black;
+  font-size: 23px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 600;
+  padding: 15px;
 }
 
 .services .list-membres li .membres-profession {
-    color: var(--azul-acinzentado);
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 700;
+  color: var(--azul-acinzentado);
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-@media (max-width: 768px){
-    .services ul.list-membres {
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .services ul.list-membres {
+    flex-direction: column;
+  }
 }
 
 .projects {
   grid-area: projects;
-  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* max-width: 2050px; */
+  margin: 0 auto;
+}
+
+.projects img {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .services .list-membres li .membres-descrition  {
+      padding: 15px;
+      width: 300px;
+  }
 }
 
 .contact {
