@@ -14,6 +14,9 @@ body {
   grid-area: header;
 }
 
+
+/* Hero */
+
 .hero {
   grid-area: hero;
   height: 90vh;
@@ -64,6 +67,9 @@ body {
     font-size: 20px;
   }
 }
+
+
+/* About */
 
 .about {
   grid-area: about;
@@ -236,6 +242,8 @@ body {
   }
 }
 
+/* Services */
+
 .services {
   grid-area: services;
   background-color: #ffffff;
@@ -262,8 +270,6 @@ body {
 
 .services .list-membres {
   display: flex;
-  /* margin: 15px;
-    padding: 15px; */
 }
 
 .services .list-membres li {
@@ -274,6 +280,11 @@ body {
   border-radius: 50%;
   padding: 25px;
   height: 40%;
+  transition: 0.3s ease-in-out;
+}
+
+.services .list-membres li .membres:hover {
+  transform: scale(1.2);
 }
 
 .services .list-membres li .membres-descrition {
@@ -312,11 +323,12 @@ body {
   }
 }
 
+/* Projects */
+
 .projects {
   grid-area: projects;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* max-width: 2050px; */
   margin: 0 auto;
 }
 
@@ -326,6 +338,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.projects img:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -341,16 +358,82 @@ body {
     grid-template-rows: 1fr;
   }
 
-  .services .list-membres li .membres-descrition  {
-      padding: 15px;
-      width: 300px;
+  .projects img {
+    width: 430px;
+  }
+
+  .services .list-membres li .membres-descrition {
+    padding: 15px;
+    width: 300px;
   }
 }
 
+@media (max-width: 320px) {
+  .projects img {
+    width: 330px;
+  }
+}
+
+/* Contact */
+
 .contact {
   grid-area: contact;
-  background-color: aquamarine;
+  display: flex;
+  background-color: var(--ciano-claro-moderno);
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 0;
 }
+
+.contact h3 {
+  font-weight: 900;
+  font-size: 35px;
+  font-family: 'Fraunces', sans-serif;
+  margin-bottom: 20px;
+  color: var(--ciano-escuro-desaturado);
+}
+
+.contact nav {
+  margin: 50px 0;
+}
+
+.contact nav ul {
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.contact nav ul li a {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px;
+    color: var(--ciano-escuro-desaturado);
+    transition: 0.3s ease-in-out;
+}
+
+.contact nav ul li a:hover {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+.contact .social-media a svg{
+  font-size: 20px;
+  fill: var(--ciano-escuro-desaturado);
+  transform: 0.3s ease-in-out;
+}
+
+.contact .social-media a {
+  margin: 15px;
+}
+.contact .social-media a svg:hover{
+  fill: #ffffff;
+  font-weight: 500;
+}
+
+/* Header */
 
 .header .header-container {
   display: flex;
