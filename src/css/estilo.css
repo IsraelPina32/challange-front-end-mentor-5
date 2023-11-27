@@ -7,7 +7,7 @@ body {
     "services services services services"
     "projects projects projects projects"
     "contact contact contact contact";
-  grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .header {
@@ -78,7 +78,6 @@ body {
   grid-template-rows: repeat(3, 1fr);
   max-width: 1920px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .about .image {
@@ -254,7 +253,6 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .services h2 {
