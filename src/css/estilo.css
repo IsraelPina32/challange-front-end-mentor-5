@@ -7,7 +7,7 @@ body {
     "services services services services"
     "projects projects projects projects"
     "contact contact contact contact";
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .header {
@@ -19,7 +19,7 @@ body {
 
 .hero {
   grid-area: hero;
-  height: 90vh;
+  height: 100vh;
   background: url("../images/desktop/image-header.jpg") center center no-repeat;
   background-size: cover;
   display: flex;
@@ -67,7 +67,6 @@ body {
     font-size: 20px;
   }
 }
-
 
 /* About */
 
@@ -146,7 +145,7 @@ body {
   position: absolute;
   bottom: 60%;
   top: 60%;
-  left: 35%;
+  left: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -253,13 +252,15 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  height: 1020px;
+
 }
 
 .services h2 {
   font-weight: 900;
   font-family: "Fraunces", sans-serif;
   color: var(--azul-acinzentado);
-  font-size: 32px;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 8px;
   margin: 25px;
@@ -268,10 +269,11 @@ body {
 
 .services .list-membres {
   display: flex;
+  align-items: center;
 }
 
 .services .list-membres li {
-  margin: 15px;
+  margin: 5px;
 }
 
 .services .list-membres li .membres {
@@ -289,9 +291,9 @@ body {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  padding: 15px;
+  padding: 15px 25px;
   color: var(--azul-muito-escuro-acinzentado);
-  width: 380px;
+  width: 450px;
   line-height: 25px;
 }
 
@@ -310,11 +312,18 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 1024px) {
+  .services .list-membres li .membres-descrition {
+    width: 340px;
+  }
+}
+
 @media (max-width: 768px) {
   .services {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   .services ul.list-membres {
     flex-direction: column;
@@ -331,7 +340,6 @@ body {
 }
 
 .projects img {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
