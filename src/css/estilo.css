@@ -7,13 +7,12 @@ body {
     "services services services services"
     "projects projects projects projects"
     "contact contact contact contact";
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .header {
   grid-area: header;
 }
-
 
 /* Hero */
 
@@ -25,7 +24,6 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  flex-wrap: wrap;
 }
 
 .hero h2 {
@@ -145,7 +143,7 @@ body {
   position: absolute;
   bottom: 60%;
   top: 60%;
-  left: 50%;
+  left: 35%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -253,7 +251,6 @@ body {
   text-align: center;
   align-items: center;
   height: 1020px;
-
 }
 
 .services h2 {
@@ -270,10 +267,6 @@ body {
 .services .list-membres {
   display: flex;
   align-items: center;
-}
-
-.services .list-membres li {
-  margin: 5px;
 }
 
 .services .list-membres li .membres {
@@ -394,7 +387,7 @@ body {
 .contact h3 {
   font-weight: 900;
   font-size: 35px;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   margin-bottom: 20px;
   color: var(--ciano-escuro-desaturado);
 }
@@ -411,12 +404,12 @@ body {
 }
 
 .contact nav ul li a {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    margin: 20px;
-    color: var(--ciano-escuro-desaturado);
-    transition: 0.3s ease-in-out;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px;
+  color: var(--ciano-escuro-desaturado);
+  transition: 0.3s ease-in-out;
 }
 
 .contact nav ul li a:hover {
@@ -424,8 +417,7 @@ body {
   color: #ffffff;
 }
 
-
-.contact .social-media a svg{
+.contact .social-media a svg {
   font-size: 20px;
   fill: var(--ciano-escuro-desaturado);
   transform: 0.3s ease-in-out;
@@ -434,7 +426,7 @@ body {
 .contact .social-media a {
   margin: 15px;
 }
-.contact .social-media a svg:hover{
+.contact .social-media a svg:hover {
   fill: #ffffff;
   font-weight: 500;
 }
